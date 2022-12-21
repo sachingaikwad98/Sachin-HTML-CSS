@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cultfit.com</title>
+    <script src="https://kit.fontawesome.com/fc972efdeb.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            color: white;
+            padding: 0%;
+            margin: 0%;
+            /* border: 1px solid red; */
+        }
+
+        #navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 150px;
+        }
+
+        #middle-navbar {
+            font-size: 25px;
+            font-weight: bolder;
+            display: flex;
+            width: 500px;
+            /* border: 2px solid red; */
+            justify-content: space-evenly;
+            align-self: center;
+            color: rgb(165, 158, 158);
+        }
+
+        #middle-navbar>div:hover {
+            color: white;
+        }
+
+
+
+        #right-navbar {
+            display: flex;
+            /* border: 2px solid red; */
+            width: 325px;
+            justify-content: space-around;
+            align-self: center;
+        }
+
+        #right-navbar>div:nth-child(1)>button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 10px;
+            margin-right: 20px;
+        }
+
+        #right-navbar>div:nth-child(1)>button>span {
+            font-size: 12px;
+        }
+
+        #right-navbar>div:nth-child(1)>button>i {
+            height: 15px;
+            margin-left: 10px;
+            /* height: 40px; */
+        }
+
+        #right-navbar>div>button:hover {
+            background-color: grey;
+            color: black;
+            border-radius: 5px;
+        }
+
+        #right-navbar>div:nth-child(2)>button:hover {
+            border-color: grey;
+
+        }
+
+        #right-navbar>div:nth-child(2)>button {
+            width: 100px;
+            height: 40px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        #right-navbar>div:nth-child(3)>i {
+            margin-top: 18px;
+            margin-right: 20px;
+        }
+
+        #right-navbar>div:nth-child(4)>i {
+            margin-top: 18px;
+        }
+
+        #first {
+            position: relative;
+            /* width: 100%; */
+        }
+
+        #over>img {
+            position: absolute;
+            margin-top: -800px;
+            justify-content: space-around;
+        }
+
+    
+
+        #over>div{
+            position: absolute;
+            border: 5px;
+            /* border:2px solid red; */
+            height: 200px;
+            width:600px;
+            text-align: center;
+            color: white;
+            margin-top:-300px;
+            font-size:40px;
+            font-weight: bold;
+        }
+
+        #over>button{
+            /* position:absolute; */
+            width:180px;
+            border:2px solid black;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(255,255,255);
+            color: #f06055;
+            font-size:large;
+            font-weight: bold;
+            margin: auto;
+            /* z-index: 4; */
+
+        }
+
+        #cards{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            margin-left: 50px;
+
+        }
+
+        #cards{
+            background-color: black;
+        }
+
+
+        #cards>div{
+            width:30%;
+            border: 2px solid red;
+
+        }
+
+        #cards>div>h2{
+            color: white;
+
+        }
+
+
+        #cards>div>img{
+            width:400px;
+            height:300px;
+        }
+
+        #cards>div>img:hover{
+            transform:scale(1.15)
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div><img
+                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png"
+                    alt="cult fit"></div>
+            <div id="middle-navbar">
+                <div>Fitness</div>
+                <div>Care</div>
+                <div>Mind</div>
+                <div>Store</div>
+
+            </div>
+            <div id="right-navbar">
+                <div>
+                    <button>
+                        <span> PUNE </span>
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                    </button>
+                </div>
+                <div><button>Get app</button></div>
+                <div><i class="fa-regular fa-user fa-xl"></i></div>
+                <div><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
+            </div>
+        </div>
+
+        <div id="first">
+            <div >
+                <video autoplay muted loop src="./production ID_4812848.mp4" width="100%" height="900px" controls></video>
+            </div>
+            <div id="over">
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/text-only-v2.png"alt="cult">
+                <DIV>A fitness movement that is worth breaking a sweat for</DIV>
+                <button>Explore Cultpass</button>
+            </div>
+        </div>
+<!-- now we are working for cards -->
+
+        <div id="cards">
+                <div>
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cb.png" />
+                    <h2>Unlimited access to</h2>
+                    <ul>
+                        <li>At-center group classes</li>
+                        <li>All ELITE & PRO gyms</li>
+                        <li>At-home live workouts</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cg.png" >
+                    <h2 >Unlimited access to</h2>
+                    <ul>
+                        <li>All PRO gyms</li>
+                        <li>2 Sessions/m at ELITE gyms & At-home live workoutsgroup classes</li>
+                        <li>At-home live workouts</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cl.png">
+                    <h2>Unlimited access to</h2>
+                    <ul>
+                        <li>
+                            At home workout</li>
+                        <li>Celebrity Workouts</li>
+                        <li>
+                            Goal-based Workouts and Meditation Sesssions</li>
+                    </ul>
+                </div>
+                
+                
+        </div>
+
+        
+
+
+    </div>
+
+
+</body>
+
+</html>
